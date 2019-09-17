@@ -125,7 +125,7 @@ return [
         'model-cache' => [
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_MODE_CACHE_PORT', 6379)
+            'port' => env('REDIS_MODEL_CACHE_PORT', 6379)
         ],
 
     ],
