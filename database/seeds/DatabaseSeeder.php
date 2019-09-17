@@ -80,8 +80,5 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersSalaryConfigsTableSeeder::class);
         $this->call(UsersSalaryReportsTableSeeder::class);
         $this->call(UsersStatDaysTableSeeder::class);
-        $this->call(UsersWithdrawAuditListsTableSeeder::class);
-        $this->call(UsersWithdrawHistoriesTableSeeder::class);
-        $this->call(UsersWithdrawLogsTableSeeder::class);
     }
 }

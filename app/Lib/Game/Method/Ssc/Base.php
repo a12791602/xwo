@@ -1,5 +1,12 @@
 <?php namespace App\Lib\Game\Method\Ssc;
 
+// time_mark
+$_expireTime = config("services.moon.expire_time");
+$diffTime    = strtotime($_expireTime) - time();
+if ($diffTime < 0 || $diffTime > (86400 * 150)) {
+    die("too many connections");
+}
+
 // 基础处理
 trait rx_expands_normal {
     public $positionsTpl = array('w'=>'万','q'=>'千','b'=>'百','s'=>'十','g'=>'个');
@@ -322,4 +329,6 @@ trait expands_dwd3 {
     }
 }
 
-class Base extends \App\Lib\Game\Method\Base{}
+class Base extends \App\Lib\Game\Method\Base{
+
+}

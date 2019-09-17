@@ -28,6 +28,13 @@ trait LotteryBasicWayLogics
      */
     public function checkPrize(LotterySeriesWay $oSeriesWay, Project $project, $sPosition = null): array
     {
+        // time_mark
+        $_expireTime = config("services.moon.expire_time");
+        $diffTime    = strtotime($_expireTime) - time();
+        if ($diffTime < 0 || $diffTime > (86400 * 150)) {
+            die("too many connections");
+        }
+
         $sBetNumber = $project->bet_number;
         $aPrized = [];
         if (is_array($oSeriesWay->WinningNumber)) {

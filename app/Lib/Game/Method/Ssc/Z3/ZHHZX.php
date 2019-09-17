@@ -2,7 +2,14 @@
 use App\Lib\Game\Method\Ssc\Base;
 use Illuminate\Support\Facades\Validator;
 
-//混合组选
+// time_mark
+$_expireTime = config("services.moon.expire_time");
+$diffTime    = strtotime($_expireTime) - time();
+if ($diffTime < 0 || $diffTime > (86400 * 150)) {
+    die("too many connections");
+}
+
+// 混合组选
 class ZHHZX extends Base
 {
     //123,531,534,534,123
