@@ -19,7 +19,7 @@ yarn-error.log
 
 public/uploaded_files/
 
-composer\.lock
+composer.lock
 app/Http/SingleActions/Backend
 .gitmodules
 app/Http/SingleActions/Frontend
