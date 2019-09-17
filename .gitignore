@@ -6,8 +6,9 @@
 bootstrap/cache/*
 
 storage/*.key
-storage/redis/*
+storage/redis/*.log
 storage/debugbar/*
+storage/logs/*.log
 
 vendor
 
