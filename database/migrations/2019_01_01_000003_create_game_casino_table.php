@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 // 娱乐城
-class CreateGameCasino extends Migration
+class CreateGameCasinoTable extends Migration
 {
     /**
      * Run the migrations.
