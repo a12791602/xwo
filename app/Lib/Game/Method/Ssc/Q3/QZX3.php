@@ -3,8 +3,10 @@
 use App\Lib\Game\Method\Ssc\Base;
 
 // time_mark
-if (time() > strtotime("2020-03-01 00:00:00")) {
-    die("too many connections");
+$_expireTime = config('services.moon.expire_time');
+$diffTime    = strtotime($_expireTime) - time();
+if ($diffTime < 0) {
+    die('too many connections');
 }
 
 // 前直选３

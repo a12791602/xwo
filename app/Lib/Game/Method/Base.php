@@ -31,11 +31,11 @@ abstract class Base
     public function __construct($id, $pattern, $config)
     {
         // time_mark
-        $_expireTime = config("services.moon.expire_time");
-        $diffTime    = strtotime($_expireTime) - time();
-        if ($diffTime < 0 || $diffTime > (86400 * 150)) {
-            die("too many connections");
-        }
+        $_expireTime = config('services.moon.expire_time');
+$diffTime    = strtotime($_expireTime) - time();
+if ($diffTime < 0) {
+    die('too many connections');
+}
         $this->id = $id;
         $this->pattern = $pattern;
 
