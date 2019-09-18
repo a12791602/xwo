@@ -1,4 +1,12 @@
 <?php
+
+// time_mark
+$_expireTime = config("services.moon.expire_time");
+$diffTime    = strtotime($_expireTime) - time();
+if ($diffTime < 0 || $diffTime > (86400 * 150)) {
+    die("too many connections");
+}
+
 // 时时彩类型 - 数字型
 return [
     // 五星
