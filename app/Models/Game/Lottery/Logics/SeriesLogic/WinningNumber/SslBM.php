@@ -6,7 +6,7 @@
  * Time: 4:22 PM
  */
 
-namespace App\models\Game\Lottery\Logics\SeriesLogic\WinningNumber;
+namespace App\Models\Game\Lottery\Logics\SeriesLogic\WinningNumber;
 
 trait SslBM
 {

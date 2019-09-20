@@ -9,7 +9,6 @@
 namespace App\Models\Game\Lottery;
 
 use App\Models\BaseModel;
-use App\Models\DeveloperUsage\MethodLevel\LotteryMethodsWaysLevel;
 use App\Models\Game\Lottery\Logics\LotterySeriesWayLogics;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
