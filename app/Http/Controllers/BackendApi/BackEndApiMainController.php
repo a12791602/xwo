@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\BackendAdminAccessGroup;
 use App\Models\DeveloperUsage\Backend\BackendAdminRoute;
 use App\Models\DeveloperUsage\Menu\BackendSystemMenu;
+use App\Models\Pay\BackendPaymentVendor;
+use App\Models\Pay\PaymentInfo;
 use App\Models\SystemPlatform;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;
@@ -88,16 +90,35 @@ class BackEndApiMainController extends Controller
         } elseif (Request::header('from') === 'Lottery Center System v3.0.0.0') {
             $open_route = BackendAdminRoute::where('is_open', 1)->pluck('method')->toArray();
             $result = true;
+        } elseif (Input::route()->getName() === "backend-api.payment.callback") {
+            $payment = Input::route()->payment;
+            $paymentInfo = PaymentInfo::where('payment_sign',$payment)->withCacheCooldownSeconds(86400)->first();
+            if(!empty($paymentInfo)) {
+                $paymentVendor = BackendPaymentVendor::where('payment_vendor_sign', $paymentInfo->payment_vendor_sign)->withCacheCooldownSeconds(86400)->first();
+                if (!empty($paymentVendor->whitelist_ips)) {
+                    $whitelist_ips = explode('|', $paymentVendor->whitelist_ips);
+                    if(!in_array(real_ip(), $whitelist_ips)) {
+                        $this->robot_cut();
+                    }
+                } else {
+                    $this->robot_cut();
+                }
+            } else {
+                $this->robot_cut();
+            }
         } else {
-            Log::info('robot attacks: ' . json_encode(Input::all()) . json_encode(Request::header()));
-            echo '机器人禁止操作';
-            die();
+            $this->robot_cut();
         }
         if ($result === true) {
             $this->middleware('auth:' . $this->currentGuard, ['except' => $open_route]);
         }
     }
 
+    private function robot_cut() {
+        Log::info('robot attacks: ' . json_encode(Input::all()) . json_encode(Request::header()));
+        echo '机器人禁止操作';
+        die();
+    }
     /**
      *　初始化所有菜单，目前商户该拥有的菜单与权限
      */
