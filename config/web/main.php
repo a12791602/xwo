@@ -130,34 +130,6 @@ return [
             'tags'          => 'homepage'
         ],
 
-        /*'homepage_customer_service'    => [
-            'key'           => 'homepage_customer_service',
-            'expire_time'   => 0,
-            'name'          => '首页客服链接缓存',
-            'tags'          => 'homepage'
-        ],
-
-        'homepage_ico'    => [
-            'key'           => 'homepage_ico',
-            'expire_time'   => 0,
-            'name'          => '首页ico缓存',
-            'tags'          => 'homepage'
-        ],
-
-        'homepage_logo'    => [
-            'key'           => 'homepage_logo',
-            'expire_time'   => 0,
-            'name'          => '首页logo缓存',
-            'tags'          => 'homepage'
-        ],
-
-        'homepage_qrcode'    => [
-            'key'           => 'homepage_qrcode',
-            'expire_time'   => 0,
-            'name'          => '首页二维码缓存',
-            'tags'          => 'homepage'
-        ],*/
-
         'web_basic_content'    => [
             'key'           => 'web_basic_content',
             'expire_time'   => 0,
@@ -187,19 +159,26 @@ return [
         ],
         //============================首页相关 END============================
         
-        'cron_job_open'    => [
-            'key'           => 'cron_job_open',
-            'expire_time'   => 0,
-            'name'          => '开启状态的定时任务缓存',
-            'tags'          => 'job'
-        ],
-
         'frontend_web_info'    => [
             'key'           => 'frontend_web_info',
             'expire_time'   => 0,
             'name'          => '前端网站基本信息缓存',
             'tags'          => 'frontend'
+        ],
+        //============================娱乐城 BEGIN============================
+        'casino_game_plats'    => [
+            'key'           => 'casino_game_plats',
+            'expire_time'   => 0,
+            'name'          => '娱乐城游戏类型',
+            'tags'          => 'casino'
+        ],
+        'casino_popular_web'    => [
+            'key'           => 'casino_popular_web',
+            'expire_time'   => 0,
+            'name'          => '娱乐城首页热门游戏',
+            'tags'          => 'casino'
         ]
+        //============================娱乐城 END=============================
     ],
 
 

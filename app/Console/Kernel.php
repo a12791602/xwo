@@ -32,7 +32,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $scheduleArr = CronJob::getOpenCronJob();
+        $scheduleArr = CronJob::select('command', 'param', 'schedule')
+            ->where('status', CronJob::STATUS_OPEN)
+            ->get()
+            ->toArray();
         foreach ($scheduleArr as $scheduleItem) {
             $criterias = json_decode($scheduleItem['param'], true);
             if (empty($criterias)) {
