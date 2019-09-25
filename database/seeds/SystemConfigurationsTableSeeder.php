@@ -191,7 +191,7 @@ class SystemConfigurationsTableSeeder extends Seeder
                 'status' => 1,
                 'display' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2019-09-05 16:29:18',
             ),
             11 => 
             array (
@@ -201,13 +201,13 @@ class SystemConfigurationsTableSeeder extends Seeder
                 'sign' => 'admin_recharge_daily_limit',
                 'name' => '每日管理员充值限制金额',
                 'description' => '每日管理员充值限制金额',
-                'value' => '90000',
+                'value' => '10000',
                 'add_admin_id' => 4,
                 'last_update_admin_id' => 4,
                 'status' => 1,
                 'display' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2019-09-03 15:30:09',
+                'updated_at' => '2019-09-23 11:57:52',
             ),
             12 => 
             array (
@@ -384,6 +384,38 @@ class SystemConfigurationsTableSeeder extends Seeder
                 'display' => 1,
                 'created_at' => '2019-08-15 16:15:41',
                 'updated_at' => '2019-08-15 16:15:41',
+            ),
+            23 => 
+            array (
+                'id' => 39,
+                'parent_id' => 1,
+                'pid' => 1,
+                'sign' => 'is_crypt_data',
+                'name' => '是否加密传递的数据',
+                'description' => '是否加密传递的数据',
+                'value' => '0',
+                'add_admin_id' => 24,
+                'last_update_admin_id' => 24,
+                'status' => 1,
+                'display' => 1,
+                'created_at' => '2019-09-13 14:33:09',
+                'updated_at' => '2019-09-25 16:08:49',
+            ),
+            24 => 
+            array (
+                'id' => 40,
+                'parent_id' => 3,
+                'pid' => 1,
+                'sign' => 'redirect_url',
+                'name' => '支付完成后跳转地址',
+                'description' => '支付完成后跳转地址',
+                'value' => NULL,
+                'add_admin_id' => 63,
+                'last_update_admin_id' => 63,
+                'status' => 1,
+                'display' => 1,
+                'created_at' => '2019-09-23 14:29:20',
+                'updated_at' => '2019-09-23 14:29:20',
             ),
         ));
         

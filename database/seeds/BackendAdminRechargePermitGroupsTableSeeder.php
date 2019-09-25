@@ -19,11 +19,11 @@ class BackendAdminRechargePermitGroupsTableSeeder extends Seeder
         \DB::table('backend_admin_recharge_permit_groups')->insert(array (
             0 => 
             array (
-                'id' => 12,
-                'group_id' => 13,
-                'group_name' => '客服组',
-                'created_at' => '2019-08-15 14:07:01',
-                'updated_at' => '2019-08-15 14:07:01',
+                'id' => 1,
+                'group_id' => 1,
+                'group_name' => '超级管理组',
+                'created_at' => '2019-09-19 10:10:41',
+                'updated_at' => '2019-09-19 10:10:41',
             ),
         ));
         

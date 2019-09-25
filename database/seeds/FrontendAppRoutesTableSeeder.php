@@ -43,6 +43,19 @@ class FrontendAppRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-17 17:13:37',
                 'updated_at' => '2019-08-17 17:13:41',
             ),
+            2 => 
+            array (
+                'id' => 5,
+                'route_name' => 'mobile-api.SystemController.is-crypt-data',
+                'controller' => 'App\\Http\\Controllers\\MobileApi\\System\\SystemController',
+                'method' => 'isCryptData',
+                'frontend_model_id' => 33,
+                'title' => '是否加密传递数据',
+                'description' => NULL,
+                'is_open' => 1,
+                'created_at' => '2019-09-16 17:28:33',
+                'updated_at' => '2019-09-16 17:28:36',
+            ),
         ));
         
         

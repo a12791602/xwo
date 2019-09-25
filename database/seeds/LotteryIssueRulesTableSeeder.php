@@ -31,7 +31,7 @@ class LotteryIssueRulesTableSeeder extends Seeder
                 'issue_count' => 9,
                 'status' => 1,
                 'created_at' => '2019-04-29 15:22:08',
-                'updated_at' => '2019-08-06 13:55:11',
+                'updated_at' => '2019-09-24 19:59:55',
             ),
             1 => 
             array (
@@ -47,7 +47,7 @@ class LotteryIssueRulesTableSeeder extends Seeder
                 'issue_count' => 50,
                 'status' => 1,
                 'created_at' => '2019-04-29 15:22:08',
-                'updated_at' => '2019-09-03 10:46:46',
+                'updated_at' => '2019-09-24 19:59:55',
             ),
             2 => 
             array (

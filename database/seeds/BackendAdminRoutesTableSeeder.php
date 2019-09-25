@@ -1098,19 +1098,6 @@ class BackendAdminRoutesTableSeeder extends Seeder
             ),
             83 => 
             array (
-                'id' => 102,
-                'route_name' => 'backend-api.homepageRotationChart.add',
-                'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Homepage\\HomepageRotationC',
-                'method' => 'add',
-                'menu_group_id' => 107,
-                'title' => '添加轮播图',
-                'description' => NULL,
-                'is_open' => 0,
-                'created_at' => '2019-05-22 11:01:52',
-                'updated_at' => '2019-06-04 17:08:32',
-            ),
-            84 => 
-            array (
                 'id' => 103,
                 'route_name' => 'backend-api.homepageRotationChart.edit',
                 'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Homepage\\HomepageRotationC',
@@ -1122,7 +1109,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-22 11:02:21',
                 'updated_at' => '2019-06-04 17:08:49',
             ),
-            85 => 
+            84 => 
             array (
                 'id' => 104,
                 'route_name' => 'backend-api.homepageRotationChart.delete',
@@ -1135,7 +1122,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-22 11:02:41',
                 'updated_at' => '2019-06-04 17:09:07',
             ),
-            86 => 
+            85 => 
             array (
                 'id' => 105,
                 'route_name' => 'backend-api.homepageRotationChart.activity-list',
@@ -1148,7 +1135,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-22 11:03:02',
                 'updated_at' => '2019-06-04 17:09:36',
             ),
-            87 => 
+            86 => 
             array (
                 'id' => 106,
                 'route_name' => 'backend-api.homepageRotationChart.sort',
@@ -1161,7 +1148,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-22 14:24:25',
                 'updated_at' => '2019-06-04 17:09:20',
             ),
-            88 => 
+            87 => 
             array (
                 'id' => 107,
                 'route_name' => 'backend-api.homepage.edit',
@@ -1174,7 +1161,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-22 18:40:28',
                 'updated_at' => '2019-06-04 17:14:18',
             ),
-            89 => 
+            88 => 
             array (
                 'id' => 108,
                 'route_name' => 'backend-api.partnerAdmin.reset-password',
@@ -1187,7 +1174,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-23 15:36:37',
                 'updated_at' => '2019-06-04 15:31:08',
             ),
-            90 => 
+            89 => 
             array (
                 'id' => 109,
                 'route_name' => 'backend-api.lotteries.method-group-switch',
@@ -1200,7 +1187,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 16:10:09',
                 'updated_at' => '2019-06-04 17:31:23',
             ),
-            91 => 
+            90 => 
             array (
                 'id' => 110,
                 'route_name' => 'backend-api.frontendAllocatedModel.detail',
@@ -1213,7 +1200,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:10:59',
                 'updated_at' => '2019-06-04 18:08:00',
             ),
-            92 => 
+            91 => 
             array (
                 'id' => 111,
                 'route_name' => 'backend-api.frontendAllocatedModel.add',
@@ -1226,7 +1213,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:12:05',
                 'updated_at' => '2019-06-04 18:08:12',
             ),
-            93 => 
+            92 => 
             array (
                 'id' => 112,
                 'route_name' => 'backend-api.frontendAllocatedModel.edit',
@@ -1239,7 +1226,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:12:38',
                 'updated_at' => '2019-06-04 18:09:08',
             ),
-            94 => 
+            93 => 
             array (
                 'id' => 113,
                 'route_name' => 'backend-api.frontendAllocatedModel.delete',
@@ -1252,7 +1239,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:13:05',
                 'updated_at' => '2019-06-04 18:09:18',
             ),
-            95 => 
+            94 => 
             array (
                 'id' => 114,
                 'route_name' => 'backend-api.popularLotteries.detail-one',
@@ -1265,7 +1252,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:46:03',
                 'updated_at' => '2019-06-04 17:14:27',
             ),
-            96 => 
+            95 => 
             array (
                 'id' => 115,
                 'route_name' => 'backend-api.popularLotteries.detail-two',
@@ -1278,7 +1265,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:46:43',
                 'updated_at' => '2019-06-04 17:14:39',
             ),
-            97 => 
+            96 => 
             array (
                 'id' => 116,
                 'route_name' => 'backend-api.popularLotteries.add',
@@ -1291,7 +1278,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:47:12',
                 'updated_at' => '2019-06-04 17:16:15',
             ),
-            98 => 
+            97 => 
             array (
                 'id' => 117,
                 'route_name' => 'backend-api.popularLotteries.lotteries-list',
@@ -1304,7 +1291,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:47:37',
                 'updated_at' => '2019-06-04 17:16:24',
             ),
-            99 => 
+            98 => 
             array (
                 'id' => 118,
                 'route_name' => 'backend-api.popularLotteries.edit',
@@ -1317,7 +1304,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:48:21',
                 'updated_at' => '2019-06-04 17:16:35',
             ),
-            100 => 
+            99 => 
             array (
                 'id' => 119,
                 'route_name' => 'backend-api.popularLotteries.delete',
@@ -1330,7 +1317,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 17:48:42',
                 'updated_at' => '2019-06-04 17:16:43',
             ),
-            101 => 
+            100 => 
             array (
                 'id' => 120,
                 'route_name' => 'backend-api.popularLotteries.lotteries-sort',
@@ -1343,7 +1330,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-24 21:34:17',
                 'updated_at' => '2019-06-04 17:16:51',
             ),
-            102 => 
+            101 => 
             array (
                 'id' => 121,
                 'route_name' => 'backend-api.notice.detail',
@@ -1356,7 +1343,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 11:31:45',
                 'updated_at' => '2019-06-04 17:19:38',
             ),
-            103 => 
+            102 => 
             array (
                 'id' => 122,
                 'route_name' => 'backend-api.notice.add',
@@ -1369,7 +1356,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 11:32:32',
                 'updated_at' => '2019-06-04 17:19:43',
             ),
-            104 => 
+            103 => 
             array (
                 'id' => 123,
                 'route_name' => 'backend-api.notice.edit',
@@ -1382,7 +1369,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 11:32:54',
                 'updated_at' => '2019-06-04 17:19:51',
             ),
-            105 => 
+            104 => 
             array (
                 'id' => 124,
                 'route_name' => 'backend-api.notice.delete',
@@ -1395,7 +1382,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 11:33:25',
                 'updated_at' => '2019-06-04 17:20:02',
             ),
-            106 => 
+            105 => 
             array (
                 'id' => 125,
                 'route_name' => 'backend-api.notice.sort',
@@ -1408,7 +1395,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 11:34:06',
                 'updated_at' => '2019-06-04 17:24:14',
             ),
-            107 => 
+            106 => 
             array (
                 'id' => 126,
                 'route_name' => 'backend-api.homepage.nav-one',
@@ -1421,7 +1408,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 14:40:56',
                 'updated_at' => '2019-06-04 17:04:35',
             ),
-            108 => 
+            107 => 
             array (
                 'id' => 127,
                 'route_name' => 'backend-api.homepage.page-model',
@@ -1434,7 +1421,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 14:42:25',
                 'updated_at' => '2019-06-04 17:16:59',
             ),
-            109 => 
+            108 => 
             array (
                 'id' => 128,
                 'route_name' => 'backend-api.userhandle.user_account_change',
@@ -1447,7 +1434,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 14:51:00',
                 'updated_at' => '2019-06-04 17:43:00',
             ),
-            110 => 
+            109 => 
             array (
                 'id' => 129,
                 'route_name' => 'backend-api.userhandle.user_recharge_history',
@@ -1460,7 +1447,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 14:51:44',
                 'updated_at' => '2019-06-04 17:43:49',
             ),
-            111 => 
+            110 => 
             array (
                 'id' => 130,
                 'route_name' => 'backend-api.userhandle.deduction_balance',
@@ -1473,7 +1460,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 16:35:12',
                 'updated_at' => '2019-06-04 17:44:03',
             ),
-            112 => 
+            111 => 
             array (
                 'id' => 131,
                 'route_name' => 'backend-api.notice.top',
@@ -1486,7 +1473,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-25 17:39:56',
                 'updated_at' => '2019-06-04 17:25:11',
             ),
-            113 => 
+            112 => 
             array (
                 'id' => 132,
                 'route_name' => 'backend-api.reportManagement.user-account-change',
@@ -1499,7 +1486,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-28 15:00:30',
                 'updated_at' => '2019-06-04 18:02:40',
             ),
-            114 => 
+            113 => 
             array (
                 'id' => 133,
                 'route_name' => 'backend-api.reportManagement.user-recharge-history',
@@ -1512,7 +1499,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-28 15:00:52',
                 'updated_at' => '2019-06-04 18:02:26',
             ),
-            115 => 
+            114 => 
             array (
                 'id' => 134,
                 'route_name' => 'backend-api.reportManagement.account_change_type',
@@ -1525,7 +1512,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-28 16:58:38',
                 'updated_at' => '2019-06-04 18:02:57',
             ),
-            116 => 
+            115 => 
             array (
                 'id' => 135,
                 'route_name' => 'backend-api.lotteries.method-row-switch',
@@ -1538,7 +1525,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-29 14:46:57',
                 'updated_at' => '2019-06-04 17:31:50',
             ),
-            117 => 
+            116 => 
             array (
                 'id' => 136,
                 'route_name' => 'backend-api.lotteries.method-switch',
@@ -1551,7 +1538,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-29 14:47:39',
                 'updated_at' => '2019-06-04 17:31:59',
             ),
-            118 => 
+            117 => 
             array (
                 'id' => 137,
                 'route_name' => 'backend-api.frontendWebRoute.detail',
@@ -1564,7 +1551,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 11:14:43',
                 'updated_at' => '2019-06-04 18:28:14',
             ),
-            119 => 
+            118 => 
             array (
                 'id' => 138,
                 'route_name' => 'backend-api.frontendAppRoute.detail',
@@ -1577,7 +1564,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 11:15:31',
                 'updated_at' => '2019-06-04 18:10:05',
             ),
-            120 => 
+            119 => 
             array (
                 'id' => 139,
                 'route_name' => 'backend-api.frontendWebRoute.add',
@@ -1590,7 +1577,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 11:15:54',
                 'updated_at' => '2019-06-04 18:14:59',
             ),
-            121 => 
+            120 => 
             array (
                 'id' => 140,
                 'route_name' => 'backend-api.frontendAppRoute.add',
@@ -1603,7 +1590,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 11:16:20',
                 'updated_at' => '2019-06-04 18:12:12',
             ),
-            122 => 
+            121 => 
             array (
                 'id' => 141,
                 'route_name' => 'backend-api.frontendWebRoute.delete',
@@ -1616,7 +1603,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 11:16:46',
                 'updated_at' => '2019-06-04 18:12:59',
             ),
-            123 => 
+            122 => 
             array (
                 'id' => 142,
                 'route_name' => 'backend-api.frontendAppRoute.delete',
@@ -1629,7 +1616,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 11:17:22',
                 'updated_at' => '2019-06-04 18:13:14',
             ),
-            124 => 
+            123 => 
             array (
                 'id' => 143,
                 'route_name' => 'backend-api.methodLevel.detail',
@@ -1642,7 +1629,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 20:44:51',
                 'updated_at' => '2019-06-04 18:16:16',
             ),
-            125 => 
+            124 => 
             array (
                 'id' => 144,
                 'route_name' => 'backend-api.methodLevel.add',
@@ -1655,7 +1642,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 20:45:21',
                 'updated_at' => '2019-06-04 18:16:28',
             ),
-            126 => 
+            125 => 
             array (
                 'id' => 145,
                 'route_name' => 'backend-api.methodLevel.edit',
@@ -1668,7 +1655,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 20:45:38',
                 'updated_at' => '2019-06-04 18:17:17',
             ),
-            127 => 
+            126 => 
             array (
                 'id' => 146,
                 'route_name' => 'backend-api.methodLevel.delete',
@@ -1681,7 +1668,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-30 20:45:55',
                 'updated_at' => '2019-06-04 18:17:30',
             ),
-            128 => 
+            127 => 
             array (
                 'id' => 148,
                 'route_name' => 'backend-api.frontendWebRoute.is-open',
@@ -1694,7 +1681,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-31 17:55:07',
                 'updated_at' => '2019-06-04 18:14:25',
             ),
-            129 => 
+            128 => 
             array (
                 'id' => 149,
                 'route_name' => 'backend-api.frontendAppRoute.is-open',
@@ -1707,7 +1694,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-05-31 17:55:39',
                 'updated_at' => '2019-06-04 18:14:36',
             ),
-            130 => 
+            129 => 
             array (
                 'id' => 150,
                 'route_name' => 'backend-api.homepage.upload-ico',
@@ -1720,7 +1707,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-03 17:21:19',
                 'updated_at' => '2019-06-04 17:05:49',
             ),
-            131 => 
+            130 => 
             array (
                 'id' => 151,
                 'route_name' => 'backend-api.configures.generate-issue-time',
@@ -1733,7 +1720,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-03 21:50:52',
                 'updated_at' => '2019-06-04 17:32:36',
             ),
-            132 => 
+            131 => 
             array (
                 'id' => 153,
                 'route_name' => 'backend-api.configures.sys-configure-value',
@@ -1746,7 +1733,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-04 15:18:24',
                 'updated_at' => '2019-06-04 15:18:24',
             ),
-            133 => 
+            132 => 
             array (
                 'id' => 154,
                 'route_name' => 'backend-api.popularLotteries.detail',
@@ -1759,7 +1746,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 12:03:30',
                 'updated_at' => '2019-06-05 12:03:30',
             ),
-            134 => 
+            133 => 
             array (
                 'id' => 155,
                 'route_name' => 'backend-api.popularMethods.detail',
@@ -1772,7 +1759,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 12:09:22',
                 'updated_at' => '2019-06-05 12:09:22',
             ),
-            135 => 
+            134 => 
             array (
                 'id' => 156,
                 'route_name' => 'backend-api.popularMethods.add',
@@ -1785,7 +1772,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 12:09:51',
                 'updated_at' => '2019-06-05 12:09:51',
             ),
-            136 => 
+            135 => 
             array (
                 'id' => 157,
                 'route_name' => 'backend-api.popularMethods.edit',
@@ -1798,7 +1785,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 12:10:28',
                 'updated_at' => '2019-06-05 12:10:28',
             ),
-            137 => 
+            136 => 
             array (
                 'id' => 158,
                 'route_name' => 'backend-api.popularMethods.delete',
@@ -1811,7 +1798,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 12:10:51',
                 'updated_at' => '2019-06-05 12:10:51',
             ),
-            138 => 
+            137 => 
             array (
                 'id' => 159,
                 'route_name' => 'backend-api.popularMethods.methods-list',
@@ -1824,7 +1811,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 13:52:20',
                 'updated_at' => '2019-06-05 13:52:20',
             ),
-            139 => 
+            138 => 
             array (
                 'id' => 160,
                 'route_name' => 'backend-api.popularLotteries.sort',
@@ -1837,7 +1824,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 15:08:57',
                 'updated_at' => '2019-06-05 15:08:57',
             ),
-            140 => 
+            139 => 
             array (
                 'id' => 161,
                 'route_name' => 'backend-api.popularMethods.sort',
@@ -1850,7 +1837,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 15:09:42',
                 'updated_at' => '2019-06-05 15:09:42',
             ),
-            141 => 
+            140 => 
             array (
                 'id' => 162,
                 'route_name' => 'backend-api.partnerAdminGroup.create',
@@ -1863,7 +1850,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-05 15:52:36',
                 'updated_at' => '2019-06-05 15:52:36',
             ),
-            142 => 
+            141 => 
             array (
                 'id' => 163,
                 'route_name' => 'backend-api.loghandle.frontend-list',
@@ -1876,7 +1863,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-06 11:57:04',
                 'updated_at' => '2019-06-06 11:57:04',
             ),
-            143 => 
+            142 => 
             array (
                 'id' => 164,
                 'route_name' => 'backend-api.lotteries.lotteries-code-length',
@@ -1889,7 +1876,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-19 21:57:49',
                 'updated_at' => '2019-06-19 21:57:49',
             ),
-            144 => 
+            143 => 
             array (
                 'id' => 165,
                 'route_name' => 'backend-api.lotteries.input-code',
@@ -1902,7 +1889,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-21 18:58:59',
                 'updated_at' => '2019-06-21 18:58:59',
             ),
-            145 => 
+            144 => 
             array (
                 'id' => 166,
                 'route_name' => 'backend-api.reportManagement.user-bets',
@@ -1915,7 +1902,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-26 20:08:04',
                 'updated_at' => '2019-06-26 20:08:04',
             ),
-            146 => 
+            145 => 
             array (
                 'id' => 167,
                 'route_name' => 'backend-api.route.is-open',
@@ -1928,7 +1915,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-01 12:37:35',
                 'updated_at' => '2019-07-01 12:37:35',
             ),
-            147 => 
+            146 => 
             array (
                 'id' => 168,
                 'route_name' => 'backend-api.accountChangeType.param-list',
@@ -1941,7 +1928,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-03 15:18:26',
                 'updated_at' => '2019-07-03 15:18:26',
             ),
-            148 => 
+            147 => 
             array (
                 'id' => 169,
                 'route_name' => 'backend-api.loghandle.get-address',
@@ -1954,7 +1941,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-04 13:34:59',
                 'updated_at' => '2019-07-04 13:34:59',
             ),
-            149 => 
+            148 => 
             array (
                 'id' => 170,
                 'route_name' => 'backend-api.lotteries.add',
@@ -1967,7 +1954,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-04 21:17:39',
                 'updated_at' => '2019-07-04 21:17:39',
             ),
-            150 => 
+            149 => 
             array (
                 'id' => 171,
                 'route_name' => 'backend-api.lotteries.edit',
@@ -1980,7 +1967,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-04 21:18:42',
                 'updated_at' => '2019-07-04 21:18:42',
             ),
-            151 => 
+            150 => 
             array (
                 'id' => 172,
                 'route_name' => 'backend-api.lotteries.delete',
@@ -1993,7 +1980,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-04 21:19:25',
                 'updated_at' => '2019-07-04 21:19:25',
             ),
-            152 => 
+            151 => 
             array (
                 'id' => 173,
                 'route_name' => 'backend-api.HelpCenterController.detail',
@@ -2006,7 +1993,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-05 21:00:56',
                 'updated_at' => '2019-07-05 21:00:56',
             ),
-            153 => 
+            152 => 
             array (
                 'id' => 174,
                 'route_name' => 'backend-api.HelpCenterController.add',
@@ -2019,7 +2006,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-05 21:01:16',
                 'updated_at' => '2019-07-05 21:01:16',
             ),
-            154 => 
+            153 => 
             array (
                 'id' => 175,
                 'route_name' => 'backend-api.HelpCenterController.edit',
@@ -2032,7 +2019,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-05 21:01:42',
                 'updated_at' => '2019-07-05 21:01:42',
             ),
-            155 => 
+            154 => 
             array (
                 'id' => 176,
                 'route_name' => 'backend-api.HelpCenterController.delete',
@@ -2045,7 +2032,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-05 21:02:09',
                 'updated_at' => '2019-07-05 21:02:09',
             ),
-            156 => 
+            155 => 
             array (
                 'id' => 177,
                 'route_name' => 'backend-api.lotteries.calculate-encode-again',
@@ -2058,7 +2045,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-06 14:22:34',
                 'updated_at' => '2019-07-06 14:22:34',
             ),
-            157 => 
+            156 => 
             array (
                 'id' => 178,
                 'route_name' => 'backend-api.HelpCenterController.upload',
@@ -2071,7 +2058,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-08 17:55:18',
                 'updated_at' => '2019-07-08 17:55:18',
             ),
-            158 => 
+            157 => 
             array (
                 'id' => 179,
                 'route_name' => 'backend-api.SystemController.upload',
@@ -2084,7 +2071,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-09 19:10:06',
                 'updated_at' => '2019-07-09 19:10:06',
             ),
-            159 => 
+            158 => 
             array (
                 'id' => 180,
                 'route_name' => 'backend-api.lotteries.lotteries-switch',
@@ -2097,7 +2084,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-16 13:46:56',
                 'updated_at' => '2019-07-16 13:46:56',
             ),
-            160 => 
+            159 => 
             array (
                 'id' => 181,
                 'route_name' => 'backend-api.lottery-notice.detail',
@@ -2110,7 +2097,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-27 14:25:30',
                 'updated_at' => '2019-07-27 14:25:30',
             ),
-            161 => 
+            160 => 
             array (
                 'id' => 186,
                 'route_name' => 'backend-api.lottery-notice.edit',
@@ -2123,7 +2110,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-27 17:16:31',
                 'updated_at' => '2019-07-27 17:16:31',
             ),
-            162 => 
+            161 => 
             array (
                 'id' => 187,
                 'route_name' => 'backend-api.lottery-notice.add',
@@ -2136,7 +2123,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-27 17:37:04',
                 'updated_at' => '2019-07-27 17:37:04',
             ),
-            163 => 
+            162 => 
             array (
                 'id' => 188,
                 'route_name' => 'backend-api.lottery-notice.delete',
@@ -2149,7 +2136,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-27 17:53:46',
                 'updated_at' => '2019-07-27 17:53:46',
             ),
-            164 => 
+            163 => 
             array (
                 'id' => 189,
                 'route_name' => 'backend-api.lottery-notice.sort',
@@ -2162,7 +2149,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-27 19:02:01',
                 'updated_at' => '2019-07-27 19:02:01',
             ),
-            165 => 
+            164 => 
             array (
                 'id' => 190,
                 'route_name' => 'backend-api.userhandle.bank-card-list',
@@ -2175,7 +2162,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-29 20:39:02',
                 'updated_at' => '2019-07-29 20:39:02',
             ),
-            166 => 
+            165 => 
             array (
                 'id' => 191,
                 'route_name' => 'backend-api.SystemController.upload-pic',
@@ -2188,7 +2175,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-30 18:21:33',
                 'updated_at' => '2019-07-30 18:21:33',
             ),
-            167 => 
+            166 => 
             array (
                 'id' => 192,
                 'route_name' => 'backend-api.login',
@@ -2201,7 +2188,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-02 18:06:10',
                 'updated_at' => '2019-08-02 18:06:27',
             ),
-            168 => 
+            167 => 
             array (
                 'id' => 193,
                 'route_name' => 'backend-api.lotteries.winning-numberset',
@@ -2214,7 +2201,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-03 15:25:52',
                 'updated_at' => '2019-08-03 16:37:05',
             ),
-            169 => 
+            168 => 
             array (
                 'id' => 194,
                 'route_name' => 'backend-api.lotteries.delete-lotteries-issues',
@@ -2227,7 +2214,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-11 19:54:17',
                 'updated_at' => '2019-08-11 19:54:17',
             ),
-            170 => 
+            169 => 
             array (
                 'id' => 195,
                 'route_name' => 'backend-api.TaskSchedulingController.detail',
@@ -2240,7 +2227,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-11 20:29:26',
                 'updated_at' => '2019-08-11 20:29:26',
             ),
-            171 => 
+            170 => 
             array (
                 'id' => 196,
                 'route_name' => 'backend-api.TaskSchedulingController.add',
@@ -2253,7 +2240,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-11 20:29:54',
                 'updated_at' => '2019-08-11 20:29:54',
             ),
-            172 => 
+            171 => 
             array (
                 'id' => 197,
                 'route_name' => 'backend-api.TaskSchedulingController.edit',
@@ -2266,7 +2253,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-11 20:30:16',
                 'updated_at' => '2019-08-11 20:30:16',
             ),
-            173 => 
+            172 => 
             array (
                 'id' => 198,
                 'route_name' => 'backend-api.TaskSchedulingController.delete',
@@ -2279,7 +2266,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-11 20:30:34',
                 'updated_at' => '2019-08-11 20:30:34',
             ),
-            174 => 
+            173 => 
             array (
                 'id' => 199,
                 'route_name' => 'backend-api.lottery-series.detail',
@@ -2292,7 +2279,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-22 22:31:39',
                 'updated_at' => '2019-08-31 15:15:40',
             ),
-            175 => 
+            174 => 
             array (
                 'id' => 200,
                 'route_name' => 'backend-api.lottery-series.add',
@@ -2305,7 +2292,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-22 22:32:01',
                 'updated_at' => '2019-08-22 22:32:01',
             ),
-            176 => 
+            175 => 
             array (
                 'id' => 201,
                 'route_name' => 'backend-api.lottery-series.edit',
@@ -2318,7 +2305,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-22 22:32:13',
                 'updated_at' => '2019-08-22 22:32:13',
             ),
-            177 => 
+            176 => 
             array (
                 'id' => 202,
                 'route_name' => 'backend-api.lottery-series.delete',
@@ -2331,7 +2318,7 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-22 22:32:28',
                 'updated_at' => '2019-08-22 22:32:28',
             ),
-            178 => 
+            177 => 
             array (
                 'id' => 203,
                 'route_name' => 'backend-api.partnerAdmin.search-user',
@@ -2343,6 +2330,175 @@ class BackendAdminRoutesTableSeeder extends Seeder
                 'is_open' => 0,
                 'created_at' => '2019-09-05 21:08:00',
                 'updated_at' => '2019-09-05 21:08:00',
+            ),
+            178 => 
+            array (
+                'id' => 204,
+                'route_name' => 'backend-api.homepageRotationChart.add',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Homepage\\HomepageBannerController',
+                'method' => 'add',
+                'menu_group_id' => 107,
+                'title' => '添加轮播图',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-07 11:13:42',
+                'updated_at' => '2019-09-07 11:13:42',
+            ),
+            179 => 
+            array (
+                'id' => 205,
+                'route_name' => 'backend-api.lotteries.all-lotteries-list',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Game\\Lottery\\LotteriesController',
+                'method' => 'allLotteriesList',
+                'menu_group_id' => 12,
+                'title' => '获取所有彩种',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-11 13:16:58',
+                'updated_at' => '2019-09-11 13:16:58',
+            ),
+            180 => 
+            array (
+                'id' => 206,
+                'route_name' => 'backend-api.withdrawCheck.detail',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Users\\Fund\\WithdrawCheckController',
+                'method' => 'detail',
+                'menu_group_id' => 121,
+                'title' => '提现详情',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-12 22:24:55',
+                'updated_at' => '2019-09-12 22:26:12',
+            ),
+            181 => 
+            array (
+                'id' => 207,
+                'route_name' => 'backend-api.withdrawCheck.withdraw-list',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Users\\Fund\\WithdrawCheckController',
+                'method' => 'withdrawList',
+                'menu_group_id' => 121,
+                'title' => '提现列表',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-12 22:26:24',
+                'updated_at' => '2019-09-12 22:26:24',
+            ),
+            182 => 
+            array (
+                'id' => 208,
+                'route_name' => 'backend-api.withdrawCheck.audit-success',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Users\\Fund\\WithdrawCheckController',
+                'method' => 'auditSuccess',
+                'menu_group_id' => 121,
+                'title' => '提现审核通过',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-12 22:26:41',
+                'updated_at' => '2019-09-12 22:26:41',
+            ),
+            183 => 
+            array (
+                'id' => 209,
+                'route_name' => 'backend-api.withdrawCheck.audit-failure',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Users\\Fund\\WithdrawCheckController',
+                'method' => 'auditFailure',
+                'menu_group_id' => 121,
+                'title' => '提现审核不通过',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-12 22:27:07',
+                'updated_at' => '2019-09-12 22:27:07',
+            ),
+            184 => 
+            array (
+                'id' => 210,
+                'route_name' => 'backend-api.userhandle.delete-bank-card',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Users\\UserHandleController',
+                'method' => 'deleteBankCard',
+                'menu_group_id' => 40,
+                'title' => '删除银行卡',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-16 14:40:09',
+                'updated_at' => '2019-09-16 14:40:09',
+            ),
+            185 => 
+            array (
+                'id' => 211,
+                'route_name' => 'backend-api.activity.sort',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Activity\\ActivityInfosController',
+                'method' => 'sort',
+                'menu_group_id' => 5,
+                'title' => '拖拽活动',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-16 21:54:06',
+                'updated_at' => '2019-09-16 21:54:06',
+            ),
+            186 => 
+            array (
+                'id' => 212,
+                'route_name' => 'backend-api.reportManagement.payment-info',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Report\\ReportManagementController',
+                'method' => 'paymentInfo',
+                'menu_group_id' => 3,
+                'title' => '获取支付渠道和支付类型',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-23 17:49:18',
+                'updated_at' => '2019-09-23 17:49:18',
+            ),
+            187 => 
+            array (
+                'id' => 213,
+                'route_name' => 'backend-api.reportManagement.withdraw-record',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Report\\ReportManagementController',
+                'method' => 'withdrawRecord',
+                'menu_group_id' => 47,
+                'title' => '玩家提现记录报表',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-23 20:13:49',
+                'updated_at' => '2019-09-23 20:13:49',
+            ),
+            188 => 
+            array (
+                'id' => 214,
+                'route_name' => 'backend-api.withdraw.status',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Withdraw\\WithdrawController',
+                'method' => 'status',
+                'menu_group_id' => 121,
+                'title' => '提现审核操作',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-24 14:20:39',
+                'updated_at' => '2019-09-24 14:20:39',
+            ),
+            189 => 
+            array (
+                'id' => 215,
+                'route_name' => 'backend-api.withdraw.show',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Withdraw\\WithdrawController',
+                'method' => 'show',
+                'menu_group_id' => 121,
+                'title' => '查看详细',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-24 15:17:57',
+                'updated_at' => '2019-09-24 15:17:57',
+            ),
+            190 => 
+            array (
+                'id' => 216,
+                'route_name' => 'backend-api.payment.callback',
+                'controller' => 'App\\Http\\Controllers\\BackendApi\\Admin\\Payment\\CallbackController',
+                'method' => 'callback',
+                'menu_group_id' => 131,
+                'title' => '支付第三方回调地址',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-09-25 18:12:22',
+                'updated_at' => '2019-09-25 18:15:32',
             ),
         ));
         

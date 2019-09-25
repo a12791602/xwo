@@ -11,49 +11,34 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //######################################################
         $this->call(SystemPlatformsTableSeeder::class);
         $this->call(BackendSystemMenusTableSeeder::class);
         $this->call(BackendAdminAccessGroupsTableSeeder::class);
         $this->call(BackendAdminUsersTableSeeder::class);
-        $this->call(ActivityBetLogsTableSeeder::class);
-        $this->call(BackendAdminAuditFlowListsTableSeeder::class);
-        $this->call(BackendAdminAuditPasswordsListsTableSeeder::class);
-        $this->call(BackendAdminMessageArticlesTableSeeder::class);
+        //######################################################
         $this->call(BackendAdminRechargePermitGroupsTableSeeder::class);
         $this->call(BackendAdminRechargePocessAmountsTableSeeder::class);
-        $this->call(BackendAdminRechargehumanLogsTableSeeder::class);
         $this->call(BackendAdminRoutesTableSeeder::class);
-        $this->call(BackendSystemInternalMessagesTableSeeder::class);
-        $this->call(BackendSystemNoticeListsTableSeeder::class);
+        $this->call(BackendPaymentConfigsTableSeeder::class);
+        $this->call(BackendPaymentTypesTableSeeder::class);
+        $this->call(BackendPaymentVendorsTableSeeder::class);
+        $this->call(CasinoGameCategoriesTableSeeder::class);
+        $this->call(CasinoGameListsTableSeeder::class);
+        $this->call(CasinoGamePlatformsTableSeeder::class);
         $this->call(CronJobsTableSeeder::class);
-        $this->call(FrontendActivityContentsTableSeeder::class);
         $this->call(FrontendAllocatedModelsTableSeeder::class);
         $this->call(FrontendAppRoutesTableSeeder::class);
         $this->call(FrontendInfoCategoriesTableSeeder::class);
-        $this->call(FrontendLinksRegisteredUsersTableSeeder::class);
-        $this->call(FrontendLotteryFnfBetableListsTableSeeder::class);
         $this->call(FrontendLotteryFnfBetableMethodsTableSeeder::class);
-        $this->call(FrontendLotteryNoticeListsTableSeeder::class);
-        $this->call(FrontendLotteryRedirectBetListsTableSeeder::class);
-        $this->call(FrontendMessageNoticesTableSeeder::class);
-        $this->call(FrontendMessageNoticesContentsTableSeeder::class);
-        $this->call(FrontendPageBannersTableSeeder::class);
         $this->call(FrontendSystemAdsTypesTableSeeder::class);
         $this->call(FrontendSystemBanksTableSeeder::class);
-        $this->call(FrontendUserDividendConfigsTableSeeder::class);
-        $this->call(FrontendUserDividendReportsTableSeeder::class);
-        $this->call(FrontendUserInvitedRecordsTableSeeder::class);
         $this->call(FrontendUsersTableSeeder::class);
         $this->call(FrontendUsersAccountsTableSeeder::class);
-        $this->call(FrontendUsersAccountsReportsTableSeeder::class);
         $this->call(FrontendUsersAccountsTypesTableSeeder::class);
         $this->call(FrontendUsersAccountsTypesParamsTableSeeder::class);
-        $this->call(FrontendUsersBankCardsTableSeeder::class);
         $this->call(FrontendUsersHelpCentersTableSeeder::class);
-        $this->call(FrontendUsersPrivacyFlowsTableSeeder::class);
-        $this->call(FrontendUsersRegisterableLinksTableSeeder::class);
         $this->call(FrontendUsersSpecificInfosTableSeeder::class);
-        $this->call(FrontendUsersTransferedRecordsTableSeeder::class);
         $this->call(FrontendWebRoutesTableSeeder::class);
         $this->call(LotteryBasicMethodsTableSeeder::class);
         $this->call(LotteryBasicWaysTableSeeder::class);
@@ -66,19 +51,14 @@ class DatabaseSeeder extends Seeder
         $this->call(LotteryMethodsStandardsTableSeeder::class);
         $this->call(LotteryMethodsValidationsTableSeeder::class);
         $this->call(LotteryMethodsWaysLevelsTableSeeder::class);
+        $this->call(LotteryPrizeDetailsTableSeeder::class);
+        $this->call(LotteryPrizeGroupsTableSeeder::class);
+        $this->call(LotteryPrizeLevelsTableSeeder::class);
         $this->call(LotterySeriesTableSeeder::class);
         $this->call(LotterySeriesMethodsTableSeeder::class);
         $this->call(LotterySeriesWaysTableSeeder::class);
-        $this->call(SystemAddressIpsTableSeeder::class);
         $this->call(SystemConfigurationsTableSeeder::class);
-        $this->call(UserDaysalariesTableSeeder::class);
-        $this->call(UserProfitsTableSeeder::class);
-        $this->call(UserTransferRecordsTableSeeder::class);
-        $this->call(UsersRechargeHistoriesTableSeeder::class);
-        $this->call(UsersRechargeLogsTableSeeder::class);
+        $this->call(UserPublicAvatarsTableSeeder::class);
         $this->call(UsersRegionsTableSeeder::class);
-        $this->call(UsersSalaryConfigsTableSeeder::class);
-        $this->call(UsersSalaryReportsTableSeeder::class);
-        $this->call(UsersStatDaysTableSeeder::class);
     }
 }
