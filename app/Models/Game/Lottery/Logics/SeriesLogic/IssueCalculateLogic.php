@@ -23,6 +23,9 @@ use Illuminate\Support\Facades\Log;
 
 trait IssueCalculateLogic
 {
+    /**
+     * @var array
+     */
     private static $projectInsertCompileColumn = [
         'user_id',
         'username',
@@ -52,8 +55,8 @@ trait IssueCalculateLogic
     ];
 
     /**
-     * @param  string  $lottery_id
-     * @param  string  $issue_no
+     * @param string $lottery_id 彩种.
+     * @param string $issue_no   奖期.
      * @return void
      */
     public static function calculateEncodedNumber(string $lottery_id, string $issue_no): void
@@ -82,11 +85,12 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryIssue  $oIssue
-     * @param  string  $lottery_id
-     * @param  LotteryList  $oLottery
+     * @param LotteryIssue $oIssue     LotteryIssue.
+     * @param string       $lottery_id 彩种.
+     * @param LotteryList  $oLottery   LotteryList.
+     * @return void
      */
-    private static function handleUnencodedProjects(LotteryIssue $oIssue, $lottery_id, LotteryList $oLottery): void
+    private static function handleUnencodedProjects(LotteryIssue $oIssue, string $lottery_id, LotteryList $oLottery): void
     {
         if ($oIssue->projects()->exists()) {
             self::handleWithOfficialCode($oIssue, $lottery_id, $oLottery);
@@ -96,11 +100,12 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryIssue  $oIssue
-     * @param $lottery_id
-     * @param  LotteryList  $oLottery
+     * @param LotteryIssue $oIssue     LotteryIssue.
+     * @param string       $lottery_id 彩种.
+     * @param LotteryList  $oLottery   LotteryList.
+     * @return void
      */
-    private static function handleWithOfficialCode(LotteryIssue $oIssue, $lottery_id, LotteryList $oLottery): void
+    private static function handleWithOfficialCode(LotteryIssue $oIssue, string $lottery_id, LotteryList $oLottery): void
     {
         if ($oIssue->official_code !== null) {
             $oProjects = $oIssue->projects->where('lottery_sign', $lottery_id)->fresh();
@@ -108,7 +113,7 @@ trait IssueCalculateLogic
             try {
                 $aWnNumberOfMethods = self::getWnNumberOfSeriesMethods(
                     $oLottery,
-                    $oIssue->official_code
+                    $oIssue->official_code,
                 ); //wn_number
             } catch (Exception $e) {
                 Log::error('Winning Number Calculation on error');
@@ -121,10 +126,11 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryList  $oLottery
-     * @param  array  $aWnNumberOfMethods
-     * @param  Collection  $oProjects
-     * @param  LotteryIssue  $oIssue
+     * @param LotteryList  $oLottery           LotteryList.
+     * @param array        $aWnNumberOfMethods 中奖号码.
+     * @param Collection   $oProjects          注单.
+     * @param LotteryIssue $oIssue             LotteryIssue.
+     * @return void
      */
     private static function handleWithBasicWays(
         LotteryList $oLottery,
@@ -141,11 +147,12 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryBasicWay  $oBasicWay
-     * @param  LotteryList  $oLottery
-     * @param  array  $aWnNumberOfMethods
-     * @param  Collection  $oProjects
-     * @param  LotteryIssue  $oIssue
+     * @param LotteryBasicWay $oBasicWay          LotteryBasicWay.
+     * @param LotteryList     $oLottery           LotteryList.
+     * @param array           $aWnNumberOfMethods 中奖号码.
+     * @param Collection      $oProjects          注单.
+     * @param LotteryIssue    $oIssue             LotteryIssue.
+     * @return void
      */
     private static function handleWithSeriesWays(
         LotteryBasicWay $oBasicWay,
@@ -154,15 +161,10 @@ trait IssueCalculateLogic
         Collection $oProjects,
         LotteryIssue $oIssue
     ): void {
-        $oSeriesWays = $oBasicWay->seriesWays()->where(
-            'series_code',
-            $oLottery->series_id
-        )
-            ->where(
-                'lottery_method_id',
-                '!=',
-                null
-            )->get();
+        $oSeriesWays = $oBasicWay->seriesWays()
+            ->where('series_code', $oLottery->series_id)
+            ->where('lottery_method_id', '!=', null)
+            ->get();
         foreach ($oSeriesWays as $oSeriesWay) {
             $oSeriesWay->setWinningNumber($aWnNumberOfMethods);
             self::handleByProjectFiltered($oProjects, $oSeriesWay, $oIssue);
@@ -171,9 +173,10 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  Collection  $oProjects
-     * @param  LotterySeriesWay  $oSeriesWay
-     * @param  LotteryIssue  $oIssue
+     * @param Collection       $oProjects  注单.
+     * @param LotterySeriesWay $oSeriesWay LotterySeriesWay.
+     * @param LotteryIssue     $oIssue     LotteryIssue.
+     * @return void
      */
     private static function handleByProjectFiltered(
         Collection $oProjects,
@@ -181,8 +184,8 @@ trait IssueCalculateLogic
         LotteryIssue $oIssue
         //LotteryList $oLottery
     ): void {
-        $oProjectsToCalculate = $oProjects->where('status',Project::STATUS_NORMAL)
-            ->where('method_sign',$oSeriesWay->lottery_method_id);
+        $oProjectsToCalculate = $oProjects->where('status', Project::STATUS_NORMAL)
+            ->where('method_sign', $oSeriesWay->lottery_method_id);
 
         if ($oProjectsToCalculate->count() >= 1) {
             //不中奖的时候
@@ -203,9 +206,10 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotterySeriesWay  $oSeriesWay
-     * @param  Collection  $oProjectsToCalculate
-     * @param  LotteryIssue  $oIssue
+     * @param LotterySeriesWay $oSeriesWay           LotterySeriesWay.
+     * @param Collection       $oProjectsToCalculate 注单.
+     * @param LotteryIssue     $oIssue               LotteryIssue.
+     * @return void
      */
     private static function calculateWinningNumber(
         LotterySeriesWay $oSeriesWay,
@@ -228,11 +232,12 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryBasicWay  $oBasicWay
-     * @param  LotterySeriesWay  $oSeriesWay
-     * @param  Project  $project
-     * @param  LotteryIssue  $oIssue
-     * @param  mixed  $sWnNumber
+     * @param LotteryBasicWay  $oBasicWay  LotteryBasicWay.
+     * @param LotterySeriesWay $oSeriesWay LotterySeriesWay.
+     * @param Project          $project    注单.
+     * @param LotteryIssue     $oIssue     LotteryIssue.
+     * @param mixed            $sWnNumber  中奖号码.
+     * @return void
      */
     private static function handleBySeriesHasWinningNumber(
         LotteryBasicWay $oBasicWay,
@@ -245,7 +250,7 @@ trait IssueCalculateLogic
             $aPrized = $oBasicWay->checkPrize(
                 $oSeriesWay,
                 $project,
-                $sPostion = null
+                $sPostion = null,
             );
         } catch (Exception $e) {
             $aPrized = [];
@@ -259,7 +264,7 @@ trait IssueCalculateLogic
             $result = $project->setWon(
                 $oIssue->official_code,
                 $sWnNumber,
-                $aPrized
+                $aPrized,
             ); //@todo Trace
         } catch (Exception $e) {
             Log::error('Set Won on error');
@@ -271,15 +276,15 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryList  $oLottery
-     * @param  string  $sFullWnNumber
-     * @param  bool  $bNameKey
+     * @param LotteryList $oLottery      LotteryList.
+     * @param string      $sFullWnNumber 开奖号码.
+     * @param boolean     $bNameKey      Name.
      * @return array
      */
     public static function getWnNumberOfSeriesMethods(
         LotteryList $oLottery,
         string $sFullWnNumber,
-        $bNameKey = false
+        bool $bNameKey = false
     ): array {
         $oSeriesMethods = LotterySeriesMethod::where('series_code', '=', $oLottery->series_id)->get();
         $aWnNumbers = [];
@@ -293,7 +298,8 @@ trait IssueCalculateLogic
     /**
      * public static function startTrace(LotteryList $oLottery, Project $project): void
      * $oLottery没用到了，代码规范 暂时去掉
-     * @param  Project  $project
+     * @param Project $project Project.
+     * @return void
      */
     public static function startTrace(Project $project): void
     {
@@ -316,8 +322,8 @@ trait IssueCalculateLogic
     /**
      * private static function handleTraceWithCurrentIssue(LotteryList $oLottery, Project $oProject): void
      * 改成全部追号统一处理   所以不需要$oProject->user_id
-     * @param  LotteryList  $oLottery
-     * @param  Project  $oProject
+     * @param LotteryList $oLottery LotteryList.
+     * @return mixed
      */
     public static function handleTraceWithCurrentIssue(LotteryList $oLottery)
     {
@@ -343,7 +349,8 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  Collection  $oTraceListEloq
+     * @param Collection $oTraceListEloq 追号list.
+     * @return mixed
      */
     private static function addProjectDataByTrace(Collection $oTraceListEloq)
     {
@@ -373,7 +380,12 @@ trait IssueCalculateLogic
         }
     }
 
-    public static function getProjectData($oTraceList)
+    /**
+     * 组装注单数据
+     * @param LotteryTraceList $oTraceList LotteryTraceList.
+     * @return array
+     */
+    public static function getProjectData(LotteryTraceList $oTraceList)
     {
         return [
             'serial_number' => Project::getProjectSerialNumber(),
@@ -401,12 +413,12 @@ trait IssueCalculateLogic
             'proxy_ip' => $oTraceList->proxy_ip,
             'bet_from' => $oTraceList->bet_from,
             'time_bought' => time(),
-            //'status_flow' => Project::STATUS_FLOW_TRACE,
         ];
     }
+
     /**
      * 从追号列表添加到 project 表
-     * @param  LotteryTraceList  $oTraceList
+     * @param LotteryTraceList $oTraceList LotteryTraceList.
      * @return array
      */
     private static function getProjectDataFromTraceLists(LotteryTraceList $oTraceList): array
@@ -419,8 +431,9 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryTrace  $oTrace
-     * @param  Project  $oProject
+     * @param LotteryTrace $oTrace   LotteryTrace.
+     * @param Project      $oProject Project.
+     * @return void
      */
     private static function traceNormalConditionUpdate(LotteryTrace $oTrace, Project $oProject): void
     {
@@ -433,6 +446,8 @@ trait IssueCalculateLogic
         if ($oProject->tracelist()->exists()) {
             $oTraceListFromProject = $oProject->tracelist;
             $oTraceListFromProject->status = LotteryTraceList::STATUS_FINISHED;
+            $oTraceListFromProject->bonus = $oProject->bonus;
+
             // $oTraceListFromProject->project_id = $oProject->id;    //生成TraceList时已经放入ProjectId
             // $oTraceListFromProject->project_serial_number = $oProject->serial_number;    //生成TraceList时已经放入ProjectNumber
             $oTraceListFromProject->save();
@@ -440,8 +455,9 @@ trait IssueCalculateLogic
     }
 
     /**
-     * @param  LotteryTrace  $oTrace
-     * @param  Project  $oProject
+     * @param LotteryTrace $oTrace   LotteryTrace.
+     * @param Project      $oProject Project.
+     * @return void
      */
     private static function traceWinStop(LotteryTrace $oTrace, Project $oProject): void
     {
@@ -463,6 +479,7 @@ trait IssueCalculateLogic
         if ($oProject->tracelist()->exists()) {
             $oTraceListFromProject = $oProject->tracelist;
             $oTraceListFromProject->status = LotteryTraceList::STATUS_FINISHED;
+            $oTraceListFromProject->bonus = $oProject->bonus;
             $oTraceListFromProject->save();
         }
         if ($oTraceList->count() > 0) {
@@ -473,7 +490,7 @@ trait IssueCalculateLogic
     /**
      * private static function getTraceItems(Project $oProject, &$first)
      * 追号逻辑变动   不管是第几期追号处理业务逻辑都一样   所以$first不需要了
-     * @param  Project  $oProject
+     * @param Project $oProject Project.
      * @return mixed
      */
     private static function getTraceItems(Project $oProject)
