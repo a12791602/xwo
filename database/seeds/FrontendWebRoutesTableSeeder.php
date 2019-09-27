@@ -19,6 +19,32 @@ class FrontendWebRoutesTableSeeder extends Seeder
         \DB::table('frontend_web_routes')->insert(array (
             0 => 
             array (
+                'id' => 18,
+                'route_name' => 'web-api.HomepageController.logo',
+                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
+                'method' => 'logo',
+                'frontend_model_id' => 10,
+                'title' => '首页logo',
+                'description' => NULL,
+                'is_open' => 0,
+                'created_at' => '2019-06-04 15:39:26',
+                'updated_at' => '2019-08-17 16:01:53',
+            ),
+            1 => 
+            array (
+                'id' => 19,
+                'route_name' => 'web-api.HomepageController.ico',
+                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
+                'method' => 'ico',
+                'frontend_model_id' => 12,
+                'title' => '网站头ico',
+                'description' => NULL,
+                'is_open' => 1,
+                'created_at' => '2019-06-04 15:40:13',
+                'updated_at' => '2019-07-25 15:17:47',
+            ),
+            2 => 
+            array (
                 'id' => 20,
                 'route_name' => 'web-api.HomepageController.banner',
                 'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
@@ -30,7 +56,20 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-04 15:40:30',
                 'updated_at' => '2019-06-05 20:43:20',
             ),
-            1 => 
+            3 => 
+            array (
+                'id' => 21,
+                'route_name' => 'web-api.HomepageController.qrcode',
+                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
+                'method' => 'qrCode',
+                'frontend_model_id' => 16,
+                'title' => '首页二维码',
+                'description' => NULL,
+                'is_open' => 1,
+                'created_at' => '2019-06-04 15:40:47',
+                'updated_at' => '2019-06-05 20:43:24',
+            ),
+            4 => 
             array (
                 'id' => 22,
                 'route_name' => 'web-api.HomepageController.notice',
@@ -43,7 +82,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-04 15:41:08',
                 'updated_at' => '2019-06-05 20:43:26',
             ),
-            2 => 
+            5 => 
             array (
                 'id' => 24,
                 'route_name' => 'web-api.HomepageController.activity',
@@ -56,7 +95,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-04 15:42:11',
                 'updated_at' => '2019-07-30 17:08:08',
             ),
-            3 => 
+            6 => 
             array (
                 'id' => 25,
                 'route_name' => 'web-api.login',
@@ -69,7 +108,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-06-04 15:46:53',
                 'updated_at' => '2019-06-05 20:43:34',
             ),
-            4 => 
+            7 => 
             array (
                 'id' => 26,
                 'route_name' => 'web-api.HomepageController.show-homepage-model',
@@ -82,7 +121,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 21:50:05',
                 'updated_at' => '2019-07-25 15:15:41',
             ),
-            5 => 
+            8 => 
             array (
                 'id' => 28,
                 'route_name' => 'web-api.HomepageController.popular-methods',
@@ -95,7 +134,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 21:53:14',
                 'updated_at' => '2019-07-19 21:53:14',
             ),
-            6 => 
+            9 => 
             array (
                 'id' => 29,
                 'route_name' => 'web-api.HomepageController.ranking',
@@ -108,7 +147,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 21:54:32',
                 'updated_at' => '2019-07-19 21:54:32',
             ),
-            7 => 
+            10 => 
             array (
                 'id' => 30,
                 'route_name' => 'web-api.UserHelpCenterController.menus',
@@ -121,7 +160,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 21:57:19',
                 'updated_at' => '2019-07-19 21:57:19',
             ),
-            8 => 
+            11 => 
             array (
                 'id' => 31,
                 'route_name' => 'web-api.HomepageController.lottery-notice-list',
@@ -134,7 +173,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 21:58:52',
                 'updated_at' => '2019-07-19 21:58:52',
             ),
-            9 => 
+            12 => 
             array (
                 'id' => 32,
                 'route_name' => 'web-api.LotteriesController.lotteryList',
@@ -147,7 +186,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 22:00:01',
                 'updated_at' => '2019-07-19 22:00:01',
             ),
-            10 => 
+            13 => 
             array (
                 'id' => 33,
                 'route_name' => 'web-api.LotteriesController.lotteryInfo',
@@ -160,7 +199,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-19 22:00:30',
                 'updated_at' => '2019-07-19 22:00:30',
             ),
-            11 => 
+            14 => 
             array (
                 'id' => 34,
                 'route_name' => 'web-api.HomepageController.popular-lotteries',
@@ -173,7 +212,33 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-07-31 20:40:33',
                 'updated_at' => '2019-07-31 20:40:37',
             ),
-            12 => 
+            15 => 
+            array (
+                'id' => 35,
+                'route_name' => 'web-api.HomepageController.popular-chess-cards-lists',
+                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
+                'method' => 'popularChessCardsLists',
+                'frontend_model_id' => 29,
+                'title' => '首页-热门棋牌列表',
+                'description' => NULL,
+                'is_open' => 1,
+                'created_at' => '2019-08-01 15:25:07',
+                'updated_at' => '2019-08-01 15:25:10',
+            ),
+            16 => 
+            array (
+                'id' => 36,
+                'route_name' => 'web-api.HomepageController.popular-e-game-lists',
+                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
+                'method' => 'popularEGameLists',
+                'frontend_model_id' => 30,
+                'title' => '首页-热门电子列表',
+                'description' => NULL,
+                'is_open' => 1,
+                'created_at' => '2019-08-01 15:25:42',
+                'updated_at' => '2019-08-01 15:25:45',
+            ),
+            17 => 
             array (
                 'id' => 37,
                 'route_name' => 'web-api.register',
@@ -186,7 +251,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-15 17:30:00',
                 'updated_at' => '2019-08-15 17:30:11',
             ),
-            13 => 
+            18 => 
             array (
                 'id' => 38,
                 'route_name' => 'web-api.HomepageController.get-web-info',
@@ -199,7 +264,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-17 15:33:59',
                 'updated_at' => '2019-08-17 15:34:20',
             ),
-            14 => 
+            19 => 
             array (
                 'id' => 39,
                 'route_name' => 'web-api.HomepageController.get-basic-content',
@@ -212,7 +277,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-17 15:34:37',
                 'updated_at' => '2019-08-17 15:35:16',
             ),
-            15 => 
+            20 => 
             array (
                 'id' => 40,
                 'route_name' => 'web-api.HomepageController.get-popular-game',
@@ -225,7 +290,7 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'created_at' => '2019-08-17 15:35:03',
                 'updated_at' => '2019-08-17 15:35:16',
             ),
-            16 => 
+            21 => 
             array (
                 'id' => 45,
                 'route_name' => 'mobile-api.HomepageController.notice',
@@ -237,71 +302,6 @@ class FrontendWebRoutesTableSeeder extends Seeder
                 'is_open' => 0,
                 'created_at' => '2019-08-17 16:04:32',
                 'updated_at' => '2019-08-17 16:04:32',
-            ),
-            17 => 
-            array (
-                'id' => 46,
-                'route_name' => 'web-api.SystemController.is-crypt-data',
-                'controller' => 'App\\Http\\Controllers\\FrontendApi\\System\\SystemController',
-                'method' => 'isCryptData',
-                'frontend_model_id' => 33,
-                'title' => '是否加密传递的数据',
-                'description' => NULL,
-                'is_open' => 1,
-                'created_at' => '2019-09-13 15:57:35',
-                'updated_at' => '2019-09-13 15:57:38',
-            ),
-            18 => 
-            array (
-                'id' => 48,
-                'route_name' => 'web-api.CasinosController.casinoPlat',
-                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Game\\Casino\\CasinosController',
-                'method' => 'casinoPlat',
-                'frontend_model_id' => 34,
-                'title' => '娱乐城平台列表',
-                'description' => NULL,
-                'is_open' => 1,
-                'created_at' => '2019-09-24 21:59:40',
-                'updated_at' => '2019-09-24 21:59:42',
-            ),
-            19 => 
-            array (
-                'id' => 50,
-                'route_name' => 'web-api.CasinosController.casinoList',
-                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Game\\Casino\\CasinosController',
-                'method' => 'casinoList',
-                'frontend_model_id' => 34,
-                'title' => '娱乐城所有游戏列表',
-                'description' => NULL,
-                'is_open' => 1,
-                'created_at' => '2019-09-24 22:01:43',
-                'updated_at' => '2019-09-24 22:02:02',
-            ),
-            20 => 
-            array (
-                'id' => 51,
-                'route_name' => 'web-api.CasinosController.searchGameCasino',
-                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Game\\Casino\\CasinosController',
-                'method' => 'searchGameCasino',
-                'frontend_model_id' => 34,
-                'title' => '娱乐城查找游戏',
-                'description' => NULL,
-                'is_open' => 1,
-                'created_at' => '2019-09-24 22:01:59',
-                'updated_at' => '2019-09-24 22:02:02',
-            ),
-            21 => 
-            array (
-                'id' => 52,
-                'route_name' => 'web-api.HomepageController.casino-game',
-                'controller' => 'App\\Http\\Controllers\\FrontendApi\\Homepage\\HomepageController',
-                'method' => 'casinoGame',
-                'frontend_model_id' => 30,
-                'title' => '娱乐城首页推荐',
-                'description' => NULL,
-                'is_open' => 1,
-                'created_at' => '2019-09-24 22:03:08',
-                'updated_at' => '2019-09-24 22:03:11',
             ),
         ));
         

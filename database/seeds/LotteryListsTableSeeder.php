@@ -35,14 +35,14 @@ class LotteryListsTableSeeder extends Seeder
                 'positions' => 'w,q,b,s,g',
                 'min_prize_group' => 1700,
                 'max_prize_group' => 1990,
-                'min_times' => 2,
+                'min_times' => 1,
                 'max_times' => 1960,
                 'max_profit_bonus' => '400000.0000',
                 'valid_modes' => '1,2,3',
                 'status' => 1,
                 'icon_path' => '/uploaded_files/aa_1/lottery/b557c705ed13c3efb7584a4f485cefd8.png',
                 'created_at' => NULL,
-                'updated_at' => '2019-09-24 19:59:55',
+                'updated_at' => '2019-08-21 16:04:34',
             ),
             1 => 
             array (

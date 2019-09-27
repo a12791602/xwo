@@ -77,7 +77,7 @@ class CronJobsTableSeeder extends Seeder
                 'id' => 7,
                 'command' => 'UserProfits',
                 'param' => NULL,
-                'schedule' => '0 1 * * * ',
+                'schedule' => '*/5 * * * *',
                 'status' => 1,
                 'remarks' => '团队盈亏处理脚本',
                 'created_at' => NULL,

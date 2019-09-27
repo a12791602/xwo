@@ -102,7 +102,7 @@ class LotterySeriesTableSeeder extends Seeder
                 'status' => 1,
                 'encode_splitter' => ',',
                 'price_difference' => 0,
-                'updated_at' => '2019-09-05 10:57:46',
+                'updated_at' => NULL,
                 'created_at' => NULL,
             ),
         ));

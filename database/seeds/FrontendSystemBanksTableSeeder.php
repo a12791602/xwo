@@ -29,31 +29,15 @@ class FrontendSystemBanksTableSeeder extends Seeder
                 'min_withdraw' => '100.00',
                 'max_withdraw' => '20000.00',
                 'remarks' => '单日充值总额无上限；无手续费',
-                'allow_user_level' => '10',
+                'allow_user_level' => '1,2,3,4,5,6,7,8,9,10',
                 'created_at' => NULL,
-                'updated_at' => '2019-09-24 17:05:51',
+                'updated_at' => '2019-07-12 16:35:46',
             ),
             1 => 
             array (
                 'id' => 3,
                 'title' => '建设银行',
                 'code' => 'CCB',
-                'pay_type' => 1,
-                'status' => 1,
-                'min_recharge' => '20.00',
-                'max_recharge' => '20000.00',
-                'min_withdraw' => '100.00',
-                'max_withdraw' => '20000.00',
-                'remarks' => '单日充值总额无上限；无手续费',
-                'allow_user_level' => '1,2,3,4,5,6,7,8,9,10',
-                'created_at' => NULL,
-                'updated_at' => '2019-09-24 15:50:25',
-            ),
-            2 => 
-            array (
-                'id' => 4,
-                'title' => '农业银行',
-                'code' => 'ABC',
                 'pay_type' => 1,
                 'status' => 0,
                 'min_recharge' => '20.00',
@@ -63,7 +47,23 @@ class FrontendSystemBanksTableSeeder extends Seeder
                 'remarks' => '单日充值总额无上限；无手续费',
                 'allow_user_level' => '1,2,3,4,5,6,7,8,9,10',
                 'created_at' => NULL,
-                'updated_at' => '2019-09-17 18:24:46',
+                'updated_at' => '2019-09-03 14:50:53',
+            ),
+            2 => 
+            array (
+                'id' => 4,
+                'title' => '农业银行',
+                'code' => 'ABC',
+                'pay_type' => 1,
+                'status' => 1,
+                'min_recharge' => '20.00',
+                'max_recharge' => '20000.00',
+                'min_withdraw' => '100.00',
+                'max_withdraw' => '20000.00',
+                'remarks' => '单日充值总额无上限；无手续费',
+                'allow_user_level' => '1,2,3,4,5,6,7,8,9,10',
+                'created_at' => NULL,
+                'updated_at' => '2019-07-12 16:35:30',
             ),
             3 => 
             array (
@@ -79,7 +79,7 @@ class FrontendSystemBanksTableSeeder extends Seeder
                 'remarks' => '单日充值总额无上限；无手续费',
                 'allow_user_level' => '1,2,3,4,5,6,7,8,9,10',
                 'created_at' => NULL,
-                'updated_at' => '2019-09-16 10:06:47',
+                'updated_at' => '2019-09-03 14:52:07',
             ),
             4 => 
             array (
@@ -95,7 +95,7 @@ class FrontendSystemBanksTableSeeder extends Seeder
                 'remarks' => '单日充值总额无上限；无手续费',
                 'allow_user_level' => '1,2,3,4,5,6,7,8,9,10',
                 'created_at' => NULL,
-                'updated_at' => '2019-09-18 23:04:57',
+                'updated_at' => '2019-08-05 22:23:45',
             ),
             5 => 
             array (
